@@ -55,7 +55,7 @@ export default function Post(props) {
               </div>
               <div>
                 <p className="text-gray-800 dark:text-gray-400">
-                  <Link href={`/author/${post.author.slug.current}`}>
+                  <Link href="#">
                     {post.author.name}
                   </Link>
                 </p>
