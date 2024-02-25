@@ -8,6 +8,7 @@ import Image from "next/image";
 import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import Logo from "../public/img/logo-preta.jpg";
 import { myLoader } from "@/utils/all";
 
 export default function Navbar(props) {
@@ -17,18 +18,18 @@ export default function Navbar(props) {
       href: "/"
     },
     {
-      label: "About",
+      label: "Sobre",
       href: "/about"
     },
     {
-      label: "Contact",
+      label: "Contatos",
       href: "/contact"
     }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
+      label: "Blog",
       href: "/archive"
     },
     {
@@ -85,9 +86,16 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
+                      <div className="block text-center">
+                          <Image
+                            src={Logo}
+                            alt="Powered by Vercel"
+                            unoptimized={true}
+                            width="150"
+                            height="25"
+                            className="rounded-md"
+                          />
+                      </div>
                     )}
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
