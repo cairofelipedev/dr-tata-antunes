@@ -76,7 +76,7 @@ export default function Footer(props) {
       </div>
       <div className="text-center text-sm">
         Copyright © {new Date().getFullYear()} {props?.copyright}.
-        All rights reserved.
+        Todos os direitos reservados.
       </div>
       <Backlink />
     </Container>

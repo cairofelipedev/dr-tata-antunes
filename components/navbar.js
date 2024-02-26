@@ -10,6 +10,7 @@ import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import Logo from "../public/img/logo-preta.jpg";
 import { myLoader } from "@/utils/all";
+import ThemeSwitch from "@/components/themeSwitch";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -49,6 +50,9 @@ export default function Navbar(props) {
 
   return (
     <Container>
+      <div className="flex justify-end">
+        <ThemeSwitch />
+      </div>
       <nav>
         <Disclosure>
           {({ open }) => (
@@ -87,14 +91,14 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <div className="block text-center">
-                          <Image
-                            src={Logo}
-                            alt="Powered by Vercel"
-                            unoptimized={true}
-                            width="150"
-                            height="25"
-                            className="rounded-md"
-                          />
+                        <Image
+                          src={Logo}
+                          alt="Powered by Vercel"
+                          unoptimized={true}
+                          width="150"
+                          height="25"
+                          className="rounded-md"
+                        />
                       </div>
                     )}
                   </Link>
@@ -107,9 +111,16 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
+                      <div className="block text-center">
+                        <Image
+                          src={Logo}
+                          alt="Powered by Vercel"
+                          unoptimized={true}
+                          width="150"
+                          height="25"
+                          className="rounded-md"
+                        />
+                      </div>
                     )}
                   </Link>
                   <Disclosure.Button
@@ -164,6 +175,7 @@ export default function Navbar(props) {
                   ))}
                 </div>
               </div>
+
               <Disclosure.Panel>
                 <div className="order-2 -ml-4 mt-4 flex w-full flex-col items-center justify-start md:hidden">
                   {mobilemenu.map((item, index) => (
