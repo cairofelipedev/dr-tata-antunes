@@ -1,32 +1,23 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { SunIcon } from "@heroicons/react/24/outline";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline"; // Import the MoonIcon
 
 const ThemeSwitch = () => {
-  //   const [mounted, setMounted] = useState(false);
-  //   const { resolvedTheme, setTheme } = useTheme();
   const { theme, setTheme } = useTheme();
-  // useEffect only runs on the client, so now we can safely show the UI
-  //   useEffect(() => {
-  //     setMounted(true);
-  //   }, []);
 
-  //   if (!mounted) {
-  //     return null;
-  //   }
+  const toggleTheme = () => {
+    // Toggle between "dark" and "light" themes
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   return (
-    <div className="inline-flex items-center">
-      <SunIcon className="w-4 h-4 mr-2" />
-      <select
-        name="themeSwitch"
-        value={theme}
-        onChange={e => setTheme(e.target.value)}>
-        <option value="system">System</option>
-        <option value="dark">Dark</option>
-        <option value="light">Light</option>
-      </select>
+    <div className="inline-flex items-center" onClick={toggleTheme} style={{ cursor: "pointer" }}>
+      {theme === "dark" ? (
+        <MoonIcon className="w-4 h-4 mr-2" /> // Moon icon for dark theme
+      ) : (
+        <SunIcon className="w-4 h-4 mr-2" /> // Sun icon for light theme
+      )}
     </div>
   );
 };
