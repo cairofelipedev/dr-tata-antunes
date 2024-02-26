@@ -1,7 +1,7 @@
 import { getSettings } from "@/lib/sanity/client";
-import Footer from "@/components/footer";
+import Footer from "@/components/footer2";
 import { urlForImage } from "@/lib/sanity/image";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar2";
 
 async function sharedMetaData(params) {
   const settings = await getSettings();
