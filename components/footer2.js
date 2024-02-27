@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/img/logo.png";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
@@ -13,20 +12,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href="/">
-              <div className="block text-center">
+              <div className="block flex h-20 items-center text-center">
                 <Image
-                  src={Logo}
+                  src="/img/logo.png"
                   alt="Powered by Vercel"
                   unoptimized={true}
-                  width="250"
+                  width="150"
                   height="25"
-                  className="rounded-md"
+                  className="w-56 rounded-md"
                 />
               </div>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptas, accusantium.
+              Dra. Thallyta Antunes, infectologista e Presidente da
+              Comissão de Controle de Infecções Relacionadas à Saúde.
             </p>
             <div className="mt-8 flex space-x-6 text-gray-600">
               {/* Social media links */}
@@ -115,7 +114,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <p className="text-xs text-gray-800 text-center">
+        <p className="text-center text-xs text-gray-800 mt-3">
           © 2024 CairoCodes
         </p>
       </div>

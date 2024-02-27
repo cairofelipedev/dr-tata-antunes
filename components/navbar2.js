@@ -1,22 +1,21 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/img/logo.png";
 
 const NavBar = () => {
     return (
-        <nav className="border-gray-200 mb-10 px-28 pt-3 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+        <nav className="border-gray-200 px-28 pt-3 bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
             <div className="w-full mx-auto">
                 <div className="mx-2 flex flex-wrap items-center justify-between">
                     <Link href="/">
-                      <div className="block text-center">
+                      <div className="block text-center h-20 flex items-center">
                         <Image
-                          src={Logo}
+                          src="/img/logo.png"
                           alt="Powered by Vercel"
                           unoptimized={true}
                           width="150"
                           height="25"
-                          className="rounded-md"
+                          className="rounded-md w-56"
                         />
                       </div>
                       </Link>
