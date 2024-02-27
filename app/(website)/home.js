@@ -8,23 +8,15 @@ export default function Post({ posts }) {
     <>
       {posts && (
         <Container>
-          <div className="relative">
-            <Image
-              src="/img/banner--medico.jpg"
-              alt="Powered by Vercel"
-              unoptimized={true}
-              width="150"
-              height="25"
-              className="w-full"
-            />
-            <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center">
+          <div className="bg-color1">
+            <div className="bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center">
               <div className="grid-cols grid px-20 text-center">
-                <p className="py-8 text-4xl font-black uppercase text-black">
+                <p className="py-8 text-4xl font-black uppercase text-white">
                   Infectologia é mais
                   <br /> do que medicina.
                   <br /> É uma arte!
                 </p>
-                <p className="text-black">
+                <p className="text-white">
                   SEJA BEM VINDO A UM ATENDIMENTO PERSONALIZADO
                 </p>
                 <div className="relative flex flex gap-2 overflow-hidden py-6">
@@ -48,10 +40,10 @@ export default function Post({ posts }) {
           </div>
           <div className="mx-auto max-w-screen-lg px-8 py-10 xl:px-5">
             <p className="pb-12 pt-5 text-center text-3xl font-bold">
-              Sobre
+              SOBRE
             </p>
             <div>
-              <div className="flex grid grid-cols-2 items-center justify-center gap-10">
+              <div className="grid grid-cols-2 items-center justify-center gap-10">
                 <div>
                   <h1 className="pb-5 text-3xl font-black">
                     Thallyta Maria Tavares Antunes
@@ -93,12 +85,12 @@ export default function Post({ posts }) {
           </div>
           <div className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
             <p className="py-12 text-center text-3xl font-bold">
-              Serviços
+              ATUAÇÃO
             </p>
           </div>
           <div className="mx-auto max-w-screen-lg px-8 xl:px-5">
             <h1 className="py-12 text-center text-3xl font-bold">
-              Blog
+              MÁTERIAS
             </h1>
             <div className="grid gap-10 md:grid-cols-2 lg:gap-10">
               {posts.slice(0, 2).map(post => (
@@ -127,10 +119,15 @@ export default function Post({ posts }) {
               </Link>
             </div>
           </div>
+          <div className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+            <p className="py-12 text-center text-3xl font-bold">
+              ONDE ENCONTRAR
+            </p>
+          </div>
           <div className="px-28 py-8">
             <div>
               <p className="py-8 text-center text-3xl font-bold">
-                Informações
+                NA MÍDIA
               </p>
             </div>
             <div className="grid grid-cols-2 gap-8">

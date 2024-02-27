@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral
+        gray: colors.neutral,
+        color1: "#1d1d33"
       },
       fontFamily: {
         // to change, update font in _document.js
