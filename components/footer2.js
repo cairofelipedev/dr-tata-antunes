@@ -7,14 +7,14 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+    <footer className="bg-color1">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href="/">
               <div className="block flex h-20 items-center text-center">
                 <Image
-                  src="/img/logo.png"
+                  src="/img/logo-preta.png"
                   alt="Powered by Vercel"
                   unoptimized={true}
                   width="150"
@@ -23,19 +23,19 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <p className="mt-4 max-w-xs text-sm text-gray-600">
+            <p className="mt-4 max-w-xs text-sm text-white">
               Dra. Thallyta Antunes, infectologista e Presidente da
               Comissão de Controle de Infecções Relacionadas à Saúde.
             </p>
-            <div className="mt-8 flex space-x-6 text-gray-600">
+            <div className="mt-8 flex space-x-6 text-white">
               {/* Social media links */}
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             {/* Navigation links */}
             <div>
-              <p className="font-medium">Company</p>
-              <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
+              <p className="font-medium text-white">Company</p>
+              <nav className="mt-4 flex flex-col space-y-2 text-sm text-white">
                 <a className="hover:opacity-75" href="#">
                   Sobre
                 </a>
@@ -48,8 +48,8 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-medium">Serviços</p>
-              <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
+              <p className="font-medium text-white">Serviços</p>
+              <nav className="mt-4 flex flex-col space-y-2 text-sm text-white">
                 <a className="hover:opacity-75" href="#">
                   1on1 Coaching
                 </a>
@@ -68,8 +68,8 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-medium">Helpful Links</p>
-              <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
+              <p className="font-medium text-white">Helpful Links</p>
+              <nav className="mt-4 flex flex-col space-y-2 text-sm text-white">
                 <a className="hover:opacity-75" href="#">
                   Contato
                 </a>
@@ -79,8 +79,8 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-medium">Legal</p>
-              <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
+              <p className="font-medium text-white">Legal</p>
+              <nav className="mt-4 flex flex-col space-y-2 text-sm text-white">
                 <a className="hover:opacity-75" href="#">
                   Política de Privacidade
                 </a>
@@ -97,7 +97,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-start justify-start">
+        <div className="flex items-start justify-start text-white">
           <div className="p-4">
             <Link href="#">
               <BsInstagram size={20} />
@@ -114,7 +114,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <p className="text-center text-xs text-gray-800 mt-3">
+        <p className="text-center text-xs text-white mt-3">
           © 2024 CairoCodes
         </p>
       </div>
